@@ -1,0 +1,38 @@
+html, body{
+    margin:0;
+    padding:0;
+    overflow-x: hidden;
+}
+
+span{
+    position: relative;
+}
+#body-app{
+    height:100vh; width:100%; background: linear-gradient(to bottom, #9be2fe 0%,#67d1fb 100%);overflow: hidden; position:absolute;
+}
+.move{
+	-webkit-animation: scale-up-center 10s cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite alternate;
+	        animation: scale-up-center 10s cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite alternate;
+}
+
+
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
